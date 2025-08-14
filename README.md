@@ -14,7 +14,7 @@ Por Matheus Esturiao.
 *Painel de filtros avançados*
 
 ![Paginaçao](./assets/images/doc/screenshot-footer.png)
-*Paginaçao com paginas para desktop e paginação infinita para mobile.
+*Paginaçao com números para desktop e paginação infinita para mobile.
 
 
 ## 🚀 Funcionalidades
