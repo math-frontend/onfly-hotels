@@ -1,0 +1,45 @@
+// Utility classes that can be extended by components
+@use './variables' as *;
+
+// Button styles
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-8 $spacing-16;
+  border: none;
+  border-radius: $border-radius-8;
+  font-family: $font-family;
+  font-size: $font-size-default;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &--primary {
+    background-color: $primary-100;
+    color: white;
+
+    &:hover {
+      background-color: $primary-200;
+    }
+  }
+
+  &--secondary {
+    background-color: $info-100;
+    color: $info-600;
+
+    &:hover {
+      background-color: $info-200;
+    }
+  }
+
+  &--success {
+    background-color: $success-100;
+    color: white;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@use '../variables' as *;
+@use '../utilities' as *;
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-64;
+  text-align: center;
+
+  &__icon {
+    font-size: 64px;
+    color: $info-300;
+    margin-bottom: $spacing-24;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: $info-600;
+    margin-bottom: $spacing-8;
+  }
+
+  &__message {
+    font-size: $font-size-default;
+    color: $info-500;
+    margin-bottom: $spacing-24;
+  }
+
+  &__action {
+    // Modifier para o botão de ação
+    &--primary {
+      @extend .btn;
+      @extend .btn--primary;
+    }
+  }
+}

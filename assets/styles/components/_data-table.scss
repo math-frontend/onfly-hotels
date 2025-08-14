@@ -1,0 +1,71 @@
+@use '../variables' as *;
+
+.data-table {
+  background-color: white;
+  border-radius: $border-radius-12;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-24;
+    border-bottom: 1px solid $info-100;
+  }
+
+  &__title {
+    font-size: $font-size-title;
+    font-weight: 600;
+    color: $info-600;
+    margin: 0;
+  }
+
+  &__actions {
+    display: flex;
+    gap: $spacing-8;
+  }
+
+  &__content {
+    overflow-x: auto;
+  }
+
+  &__empty {
+    padding: $spacing-48;
+    text-align: center;
+    color: $info-500;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  &__header {
+    background-color: #f8f9fa;
+  }
+
+  &__row {
+    border-bottom: 1px solid $info-100;
+
+    &:hover {
+      background-color: #f8f9fa;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__cell {
+    padding: $spacing-12 $spacing-16;
+    text-align: left;
+    font-size: $font-size-default;
+
+    &--header {
+      font-weight: 600;
+      color: $info-600;
+      background-color: #f8f9fa;
+    }
+  }
+}

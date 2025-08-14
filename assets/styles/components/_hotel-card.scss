@@ -1,0 +1,487 @@
+.hotel-card {
+  height: 210px;
+  background-color: #F8F8F8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  // Layout Grid (Vertical) - Padrão
+  &--grid {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    height: auto;
+
+    .hotel-card__image-section {
+      flex: none;
+      height: 180px;
+    }
+
+    .hotel-card__details-section {
+      flex: 1;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .hotel-card__pricing-section {
+      border-top: 1px solid #E5E5E5;
+      border-left: none;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .hotel-card__amenities {
+      justify-content: flex-start;
+      margin-bottom: 0;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .hotel-card__amenity-icon {
+      width: 28px;
+      height: 28px;
+
+      .material-icons {
+        font-size: 14px;
+      }
+    }
+
+    .hotel-card__features {
+      margin-bottom: 0;
+      gap: 6px;
+    }
+
+    .hotel-card__name {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .hotel-card__location {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .hotel-card__price-breakdown {
+      margin-top: 12px;
+      padding-top: 12px;
+    }
+
+    .hotel-card__details-button {
+      margin-top: 16px;
+      height: 44px;
+    }
+  }
+
+  // Layout List (Horizontal) - Como na imagem
+  &--list {
+    display: flex;
+    flex-direction: row;
+    min-height: 240px;
+
+    .hotel-card__image-section {
+      flex: 0 0 30%;
+      position: relative;
+    }
+
+    .hotel-card__image-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 240px;
+    }
+
+    .hotel-card__details-section {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hotel-card__pricing-section {
+      flex: 0 0 30%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-left: 1px solid #E5E5E5;
+      min-height: 240px;
+    }
+
+    .hotel-card__details-button {
+      margin-top: auto;
+      height: 48px;
+      width: 100%;
+    }
+
+    .hotel-card__price-breakdown {
+      margin-top: 8px;
+      padding-top: 8px;
+      gap: 4px;
+    }
+
+    .hotel-card__breakdown-row {
+      font-size: 11px;
+
+      &--total {
+        font-size: 12px;
+        padding-top: 6px;
+        margin-top: 6px;
+      }
+    }
+  }
+
+  // Seção da Imagem
+  &__image-section {
+    position: relative;
+  }
+
+  // Seção de Detalhes
+  &__details-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ADADB3;
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__location {
+    font-size: 14px;
+    color: #ADADB3;
+    margin-top: -12px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  // Ícones de Amenidades
+  &__amenities {
+    margin-top: 16px;
+    display: flex;
+    gap: 6px;
+  }
+
+  &__amenity-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      background: linear-gradient(135deg, var(--amenity-color, #007bff) 0%, var(--amenity-color, #007bff) 100%);
+      border-color: var(--amenity-color, #007bff);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+      animation: iconPulse 0.6s ease-in-out;
+
+      .material-icons {
+        color: white;
+      }
+    }
+
+    .material-icons {
+      font-size: 16px;
+      color: var(--amenity-color, #495057);
+      transition: color 0.3s ease;
+    }
+  }
+
+  // Recursos Especiais
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #00835C;
+    font-weight: 500;
+
+    .material-icons {
+      font-size: 14px;
+      color: #00835C;
+    }
+  }
+
+  // Seção de Preços
+  &__pricing-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__price-label {
+    font-size: 12px;
+    color: #888888;
+    font-weight: 500;
+  }
+
+  &__main-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #007BFF;
+    line-height: 1;
+  }
+
+  &__no-booking-price {
+    font-size: 14px;
+    color: #666666;
+    text-decoration: line-through;
+  }
+
+  // Breakdown de Preços
+  &__price-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+
+  &__details-button {
+    margin-top: 16px;
+    height: 48px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  &__breakdown-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+
+    &--total {
+      font-weight: 600;
+      color: #333333;
+      font-size: 14px;
+      padding-top: 8px;
+      border-top: 1px solid #E5E5E5;
+      margin-top: 8px;
+    }
+  }
+
+  &__breakdown-label {
+    color: #666666;
+  }
+
+  &__breakdown-value {
+    color: #333333;
+    font-weight: 500;
+  }
+
+  // Botão de Ação
+  &__action-btn {
+    background: linear-gradient(135deg, #007BFF 0%, #0056CC 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 16px;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .hotel-card {
+    &--grid {
+      min-height: 380px;
+
+      .hotel-card__details-section {
+        padding: 16px;
+        gap: 12px;
+      }
+
+      .hotel-card__pricing-section {
+        padding: 16px;
+        gap: 10px;
+      }
+
+      .hotel-card__name {
+        font-size: 18px;
+      }
+
+      .hotel-card__amenities {
+        gap: 6px;
+      }
+
+      .hotel-card__amenity-icon {
+        width: 28px;
+        height: 28px;
+
+        .material-icons {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &--list {
+      flex-direction: column;
+
+      .hotel-card__image-section {
+        flex: none;
+        height: 200px;
+      }
+
+      .hotel-card__image-container {
+        min-height: 200px;
+      }
+
+      .hotel-card__image {
+        border-radius: 12px 12px 0 0;
+      }
+
+      .hotel-card__pricing-section {
+        border-left: none;
+        border-top: 1px solid #E5E5E5;
+        min-height: auto;
+        justify-content: flex-start;
+        padding: 16px;
+      }
+
+      .hotel-card__amenities {
+        justify-content: center;
+      }
+
+      .hotel-card__details-button {
+        margin-top: 16px;
+      }
+    }
+
+    &__amenities {
+      gap: 6px;
+    }
+
+    &__amenity-icon {
+      width: 28px;
+      height: 28px;
+
+      .material-icons {
+        font-size: 14px;
+      }
+    }
+
+    &__main-price {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hotel-card {
+    &__amenities {
+      gap: 4px;
+    }
+
+    &__amenity-icon {
+      width: 24px;
+      height: 24px;
+
+      .material-icons {
+        font-size: 12px;
+      }
+    }
+
+    &__main-price {
+      font-size: 18px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+  }
+}
+
+// Tooltip personalizado
+.hotel-card__tooltip {
+  position: fixed;
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1000;
+  pointer-events: none;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  // Seta do tooltip
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #333;
+  }
+
+  // Animação de entrada
+  animation: tooltipFadeIn 0.2s ease-out;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes iconPulse {
+  0% {
+    transform: translateY(-2px) scale(1);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.1);
+  }
+  100% {
+    transform: translateY(-2px) scale(1);
+  }
+}

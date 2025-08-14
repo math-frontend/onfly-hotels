@@ -1,0 +1,241 @@
+@use 'sass:color';
+
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+
+  &__trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+
+    &:hover {
+      background: #e2e8f0;
+      color: #475569;
+    }
+
+    &--active {
+      background: #0094ff;
+      color: #fff;
+      border-color: #0094ff;
+    }
+
+    i {
+      font-size: 16px;
+    }
+  }
+
+  &__arrow {
+    font-size: 14px !important;
+    transition: transform 0.2s ease;
+  }
+
+  &__badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #ef4444;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  &__content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin-top: 8px;
+    z-index: 1000;
+    max-height: 500px;
+    overflow-y: auto;
+
+    @media (max-width: 768px) {
+      right: -20px;
+      width: 280px;
+    }
+
+    @media (max-width: 480px) {
+      right: -40px;
+      width: 260px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #f1f5f9;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1e293b;
+      margin: 0;
+    }
+  }
+
+  &__reset {
+    background: none;
+    border: none;
+    color: #0094ff;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+
+    &:hover {
+      color: color.adjust(#0094ff, $lightness: -10%);
+    }
+  }
+
+  &__body {
+    padding: 16px;
+  }
+}
+
+.filter-section {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 12px;
+  }
+
+  &__price-range {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  &__price-input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    label {
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    input {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 14px;
+
+      &:focus {
+        outline: none;
+        border-color: #0094ff;
+        box-shadow: 0 0 0 3px rgba(0, 148, 255, 0.1);
+      }
+    }
+  }
+
+  &__stars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__star-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+
+  &__checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: #0094ff;
+  }
+
+  &__star-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__star {
+    color: #FFD700;
+    font-size: 14px;
+
+    &--empty {
+      color: #cbd5e1;
+    }
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__feature-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+
+  &__feature-label {
+    font-size: 14px;
+    color: #475569;
+  }
+}
+
+/* Scrollbar styling */
+.filter-dropdown__content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filter-dropdown__content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.filter-dropdown__content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.filter-dropdown__content::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filter-dropdown {
+    &__price-range {
+      grid-template-columns: 1fr;
+    }
+  }
+}

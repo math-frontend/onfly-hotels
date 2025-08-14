@@ -1,0 +1,1045 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Hotel São Paulo Palace",
+      "description": "Luxuoso hotel no coração de São Paulo com vista para a cidade",
+      "stars": "5",
+      "totalPrice": 300000,
+      "dailyPrice": 270000,
+      "tax": 30000,
+      "thumb": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Bela Vista",
+      "placeId": 1
+    },
+    {
+      "id": 21,
+      "name": "Windsor Palace Hotel",
+      "description": "Hotel histórico com arquitetura clássica no centro de São Paulo",
+      "stars": "5",
+      "totalPrice": 280000,
+      "dailyPrice": 252000,
+      "tax": 28000,
+      "thumb": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "STEAM_ROOM"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Centro",
+      "placeId": 1
+    },
+    {
+      "id": 22,
+      "name": "Hotel Unique",
+      "description": "Hotel boutique com design arquitetônico único na Vila Madalena",
+      "stars": "5",
+      "totalPrice": 420000,
+      "dailyPrice": 378000,
+      "tax": 42000,
+      "thumb": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "FITNESS_CENTER"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Vila Madalena",
+      "placeId": 1
+    },
+    {
+      "id": 23,
+      "name": "Hotel Fasano",
+      "description": "Hotel de luxo com restaurante premiado na Oscar Freire",
+      "stars": "5",
+      "totalPrice": 550000,
+      "dailyPrice": 495000,
+      "tax": 55000,
+      "thumb": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "STEAM_ROOM", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Jardins",
+      "placeId": 1
+    },
+    {
+      "id": 24,
+      "name": "Hotel Emiliano",
+      "description": "Hotel boutique sofisticado com vista para o Parque Ibirapuera",
+      "stars": "5",
+      "totalPrice": 380000,
+      "dailyPrice": 342000,
+      "tax": 38000,
+      "thumb": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "FITNESS_CENTER"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Vila Mariana",
+      "placeId": 1
+    },
+    {
+      "id": 25,
+      "name": "Hotel Tivoli Mofarrej",
+      "description": "Hotel de luxo com spa completo na Alameda Santos",
+      "stars": "5",
+      "totalPrice": 450000,
+      "dailyPrice": 405000,
+      "tax": 45000,
+      "thumb": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "STEAM_ROOM", "FITNESS_CENTER"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Jardins",
+      "placeId": 1
+    },
+    {
+      "id": 26,
+      "name": "Hotel Mercure São Paulo",
+      "description": "Hotel executivo moderno próximo ao centro empresarial",
+      "stars": "4",
+      "totalPrice": 220000,
+      "dailyPrice": 198000,
+      "tax": 22000,
+      "thumb": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "RESTAURANT", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Itaim Bibi",
+      "placeId": 1
+    },
+    {
+      "id": 27,
+      "name": "Hotel Ibis São Paulo",
+      "description": "Hotel econômico com excelente custo-benefício",
+      "stars": "3",
+      "totalPrice": 80000,
+      "dailyPrice": 72000,
+      "tax": 8000,
+      "thumb": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Mooca",
+      "placeId": 1
+    },
+    {
+      "id": 28,
+      "name": "Hotel Novotel São Paulo",
+      "description": "Hotel familiar com piscina e área de lazer",
+      "stars": "4",
+      "totalPrice": 180000,
+      "dailyPrice": 162000,
+      "tax": 18000,
+      "thumb": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "FITNESS_CENTER"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Vila Olímpia",
+      "placeId": 1
+    },
+    {
+      "id": 29,
+      "name": "Hotel Comfort Inn",
+      "description": "Hotel confortável para viagens de negócios",
+      "stars": "3",
+      "totalPrice": 95000,
+      "dailyPrice": 85500,
+      "tax": 9500,
+      "thumb": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "ROOM_SERVICE"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Pinheiros",
+      "placeId": 1
+    },
+    {
+      "id": 30,
+      "name": "Hotel Best Western",
+      "description": "Hotel de rede internacional com padrão de qualidade",
+      "stars": "4",
+      "totalPrice": 160000,
+      "dailyPrice": 144000,
+      "tax": 16000,
+      "thumb": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "RESTAURANT"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Perdizes",
+      "placeId": 1
+    },
+    {
+      "id": 2,
+      "name": "Pousada Paulista",
+      "description": "Pousada charmosa e acolhedora no centro histórico",
+      "stars": "3",
+      "totalPrice": 120000,
+      "dailyPrice": 108000,
+      "tax": 12000,
+      "thumb": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "ROOM_SERVICE"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Vila Progredior",
+      "placeId": 1
+    },
+    {
+      "id": 3,
+      "name": "Hotel Paulista Center",
+      "description": "Hotel executivo com excelente localização para negócios",
+      "stars": "4",
+      "totalPrice": 180000,
+      "dailyPrice": 162000,
+      "tax": 18000,
+      "thumb": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Bela Vista",
+      "placeId": 1
+    },
+    {
+      "id": 4,
+      "name": "Grand Hotel São Paulo",
+      "description": "Hotel 5 estrelas com serviço de primeira classe",
+      "stars": "5",
+      "totalPrice": 350000,
+      "dailyPrice": 315000,
+      "tax": 35000,
+      "thumb": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "STEAM_ROOM"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "República",
+      "placeId": 1
+    },
+    {
+      "id": 5,
+      "name": "Hotel Center São Paulo",
+      "description": "Hotel econômico no centro da cidade",
+      "stars": "3",
+      "totalPrice": 90000,
+      "dailyPrice": 81000,
+      "tax": 9000,
+      "thumb": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Centro",
+      "placeId": 1
+    },
+    {
+      "id": 6,
+      "name": "Hotel Augusta São Paulo",
+      "description": "Hotel boutique na Augusta com design moderno",
+      "stars": "4",
+      "totalPrice": 160000,
+      "dailyPrice": 144000,
+      "tax": 16000,
+      "thumb": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Consolação",
+      "placeId": 1
+    },
+    {
+      "id": 7,
+      "name": "Hotel Premium São Paulo",
+      "description": "Hotel premium com vista panorâmica da cidade",
+      "stars": "5",
+      "totalPrice": 400000,
+      "dailyPrice": 360000,
+      "tax": 40000,
+      "thumb": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "POOL", "RESTAURANT", "SPA", "STEAM_ROOM"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Vila Progredior",
+      "placeId": 1
+    },
+    {
+      "id": 8,
+      "name": "Hotel São Paulo Inn",
+      "description": "Hotel familiar com ambiente acolhedor",
+      "stars": "3",
+      "totalPrice": 100000,
+      "dailyPrice": 90000,
+      "tax": 10000,
+      "thumb": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+      ],
+      "amenities": ["WI_FI", "ROOM_SERVICE", "PET_FRIENDLY"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Santa Cecília",
+      "placeId": 1
+    },
+    {
+      "id": 9,
+      "name": "Hotel Paulista Garden",
+      "description": "Hotel com jardim tropical no coração da Paulista",
+      "stars": "4",
+      "totalPrice": 150000,
+      "dailyPrice": 135000,
+      "tax": 15000,
+      "thumb": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "POOL"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Vila Progredior",
+      "placeId": 1
+    },
+    {
+      "id": 10,
+      "name": "Hotel Paulista Suite",
+      "description": "Suítes luxuosas com serviço personalizado",
+      "stars": "5",
+      "totalPrice": 500000,
+      "dailyPrice": 450000,
+      "tax": 50000,
+      "thumb": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800"
+      ],
+      "amenities": ["WI_FI", "POOL", "RESTAURANT", "FITNESS_CENTER", "SPA", "STEAM_ROOM"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Bela Vista",
+      "placeId": 1
+    },
+    {
+      "id": 11,
+      "name": "Copacabana Palace",
+      "description": "Hotel histórico na praia mais famosa do Rio",
+      "stars": "5",
+      "totalPrice": 450000,
+      "dailyPrice": 405000,
+      "tax": 45000,
+      "thumb": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "STEAM_ROOM"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Copacabana",
+      "placeId": 2
+    },
+    {
+      "id": 12,
+      "name": "Hotel Ipanema Beach",
+      "description": "Hotel boutique na praia de Ipanema",
+      "stars": "4",
+      "totalPrice": 280000,
+      "dailyPrice": 252000,
+      "tax": 28000,
+      "thumb": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Ipanema",
+      "placeId": 2
+    },
+    {
+      "id": 13,
+      "name": "Hotel Leblon",
+      "description": "Hotel sofisticado no Leblon",
+      "stars": "4",
+      "totalPrice": 320000,
+      "dailyPrice": 288000,
+      "tax": 32000,
+      "thumb": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Leblon",
+      "placeId": 2
+    },
+    {
+      "id": 14,
+      "name": "Hotel Centro Rio",
+      "description": "Hotel no centro histórico do Rio",
+      "stars": "3",
+      "totalPrice": 150000,
+      "dailyPrice": 135000,
+      "tax": 15000,
+      "thumb": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Centro",
+      "placeId": 2
+    },
+    {
+      "id": 15,
+      "name": "Hotel Santa Teresa",
+      "description": "Hotel boutique no bairro boêmio",
+      "stars": "4",
+      "totalPrice": 200000,
+      "dailyPrice": 180000,
+      "tax": 20000,
+      "thumb": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Santa Teresa",
+      "placeId": 2
+    },
+    {
+      "id": 16,
+      "name": "Hotel Barra da Tijuca",
+      "description": "Hotel moderno na Barra da Tijuca",
+      "stars": "4",
+      "totalPrice": 180000,
+      "dailyPrice": 162000,
+      "tax": 18000,
+      "thumb": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Barra da Tijuca",
+      "placeId": 2
+    },
+    {
+      "id": 17,
+      "name": "Hotel Flamengo",
+      "description": "Hotel com vista para o Pão de Açúcar",
+      "stars": "3",
+      "totalPrice": 120000,
+      "dailyPrice": 108000,
+      "tax": 12000,
+      "thumb": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+      ],
+      "amenities": ["WI_FI", "ROOM_SERVICE"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Flamengo",
+      "placeId": 2
+    },
+    {
+      "id": 18,
+      "name": "Hotel Botafogo",
+      "description": "Hotel executivo em Botafogo",
+      "stars": "4",
+      "totalPrice": 160000,
+      "dailyPrice": 144000,
+      "tax": 16000,
+      "thumb": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Botafogo",
+      "placeId": 2
+    },
+    {
+      "id": 19,
+      "name": "Hotel Leme",
+      "description": "Hotel na praia do Leme",
+      "stars": "3",
+      "totalPrice": 140000,
+      "dailyPrice": 126000,
+      "tax": 14000,
+      "thumb": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Leme",
+      "placeId": 2
+    },
+    {
+      "id": 20,
+      "name": "Hotel Urca",
+      "description": "Hotel boutique na Urca",
+      "stars": "4",
+      "totalPrice": 220000,
+      "dailyPrice": 198000,
+      "tax": 22000,
+      "thumb": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Urca",
+      "placeId": 2
+    },
+    {
+      "id": 31,
+      "name": "Hotel Belmond Copacabana Palace",
+      "description": "Hotel histórico de luxo na praia mais famosa do mundo",
+      "stars": "5",
+      "totalPrice": 600000,
+      "dailyPrice": 540000,
+      "tax": 60000,
+      "thumb": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "STEAM_ROOM", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Copacabana",
+      "placeId": 2
+    },
+    {
+      "id": 32,
+      "name": "Hotel Fasano Rio",
+      "description": "Hotel boutique de luxo com vista para o mar",
+      "stars": "5",
+      "totalPrice": 480000,
+      "dailyPrice": 432000,
+      "tax": 48000,
+      "thumb": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "FITNESS_CENTER"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Ipanema",
+      "placeId": 2
+    },
+    {
+      "id": 33,
+      "name": "Hotel Santa Teresa",
+      "description": "Hotel boutique no bairro boêmio com vista panorâmica",
+      "stars": "4",
+      "totalPrice": 250000,
+      "dailyPrice": 225000,
+      "tax": 25000,
+      "thumb": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "RESTAURANT", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Santa Teresa",
+      "placeId": 2
+    },
+    {
+      "id": 34,
+      "name": "Hotel Windsor Barra",
+      "description": "Hotel moderno na Barra da Tijuca com praia privativa",
+      "stars": "4",
+      "totalPrice": 200000,
+      "dailyPrice": 180000,
+      "tax": 20000,
+      "thumb": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "FITNESS_CENTER"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Barra da Tijuca",
+      "placeId": 2
+    },
+    {
+      "id": 35,
+      "name": "Hotel Ibis Rio Centro",
+      "description": "Hotel econômico no centro histórico do Rio",
+      "stars": "3",
+      "totalPrice": 85000,
+      "dailyPrice": 76500,
+      "tax": 8500,
+      "thumb": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Centro",
+      "placeId": 2
+    },
+    {
+      "id": 36,
+      "name": "Hotel Mercure Rio",
+      "description": "Hotel executivo com vista para a Baía de Guanabara",
+      "stars": "4",
+      "totalPrice": 180000,
+      "dailyPrice": 162000,
+      "tax": 18000,
+      "thumb": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "RESTAURANT", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Flamengo",
+      "placeId": 2
+    },
+    {
+      "id": 37,
+      "name": "Hotel Novotel Rio",
+      "description": "Hotel familiar com piscina e vista para o Pão de Açúcar",
+      "stars": "4",
+      "totalPrice": 160000,
+      "dailyPrice": 144000,
+      "tax": 16000,
+      "thumb": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "FITNESS_CENTER"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Botafogo",
+      "placeId": 2
+    },
+    {
+      "id": 38,
+      "name": "Hotel Comfort Rio",
+      "description": "Hotel confortável próximo ao aeroporto",
+      "stars": "3",
+      "totalPrice": 90000,
+      "dailyPrice": 81000,
+      "tax": 9000,
+      "thumb": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "ROOM_SERVICE"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Galeão",
+      "placeId": 2
+    },
+    {
+      "id": 39,
+      "name": "Hotel Best Western Rio",
+      "description": "Hotel de rede com localização privilegiada",
+      "stars": "4",
+      "totalPrice": 140000,
+      "dailyPrice": 126000,
+      "tax": 14000,
+      "thumb": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "RESTAURANT"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Leme",
+      "placeId": 2
+    },
+    {
+      "id": 40,
+      "name": "Hotel Boutique Urca",
+      "description": "Hotel boutique charmoso na Urca com vista para a Baía",
+      "stars": "4",
+      "totalPrice": 280000,
+      "dailyPrice": 252000,
+      "tax": 28000,
+      "thumb": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "RESTAURANT", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Urca",
+      "placeId": 2
+    },
+    {
+      "id": 41,
+      "name": "Hotel Fiesta Salvador",
+      "description": "Hotel de luxo no Pelourinho com vista para a Baía de Todos os Santos",
+      "stars": "5",
+      "totalPrice": 320000,
+      "dailyPrice": 288000,
+      "tax": 32000,
+      "thumb": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Pelourinho",
+      "placeId": 3
+    },
+    {
+      "id": 42,
+      "name": "Hotel Mercure Salvador",
+      "description": "Hotel executivo na orla de Salvador",
+      "stars": "4",
+      "totalPrice": 180000,
+      "dailyPrice": 162000,
+      "tax": 18000,
+      "thumb": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "RESTAURANT"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Ondina",
+      "placeId": 3
+    },
+    {
+      "id": 43,
+      "name": "Hotel Brasília Palace",
+      "description": "Hotel histórico projetado por Oscar Niemeyer",
+      "stars": "5",
+      "totalPrice": 280000,
+      "dailyPrice": 252000,
+      "tax": 28000,
+      "thumb": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Setor Hoteleiro Sul",
+      "placeId": 4
+    },
+    {
+      "id": 44,
+      "name": "Hotel Mercure Brasília",
+      "description": "Hotel moderno no centro de Brasília",
+      "stars": "4",
+      "totalPrice": 160000,
+      "dailyPrice": 144000,
+      "tax": 16000,
+      "thumb": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "RESTAURANT", "BAR"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Asa Sul",
+      "placeId": 4
+    },
+    {
+      "id": 45,
+      "name": "Hotel Costão do Santinho",
+      "description": "Resort de luxo na praia do Santinho em Florianópolis",
+      "stars": "5",
+      "totalPrice": 380000,
+      "dailyPrice": 342000,
+      "tax": 38000,
+      "thumb": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "POOL", "RESTAURANT", "SPA", "FITNESS_CENTER"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": false,
+      "district": "Santinho",
+      "placeId": 5
+    },
+    {
+      "id": 46,
+      "name": "Hotel Mercure Florianópolis",
+      "description": "Hotel executivo no centro de Florianópolis",
+      "stars": "4",
+      "totalPrice": 140000,
+      "dailyPrice": 126000,
+      "tax": 14000,
+      "thumb": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400",
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      ],
+      "amenities": ["WI_FI", "PARKING", "FITNESS_CENTER", "RESTAURANT"],
+      "hasBreakFast": true,
+      "hasRefundableRoom": true,
+      "district": "Centro",
+      "placeId": 5
+    }
+  ],
+  "places": [
+    {
+      "id": 1,
+      "name": "São Paulo",
+      "state": "SP",
+      "country": "Brasil"
+    },
+    {
+      "id": 2,
+      "name": "Rio de Janeiro",
+      "state": "RJ",
+      "country": "Brasil"
+    },
+    {
+      "id": 3,
+      "name": "Salvador",
+      "state": "BA",
+      "country": "Brasil"
+    },
+    {
+      "id": 4,
+      "name": "Brasília",
+      "state": "DF",
+      "country": "Brasil"
+    },
+    {
+      "id": 5,
+      "name": "Florianópolis",
+      "state": "SC",
+      "country": "Brasil"
+    }
+  ],
+  "amenities": [
+    {
+      "key": "WI_FI",
+      "label": "Wi-fi grátis"
+    },
+    {
+      "key": "PARKING",
+      "label": "Estacionamento"
+    },
+    {
+      "key": "POOL",
+      "label": "Piscina"
+    },
+    {
+      "key": "RESTAURANT",
+      "label": "Restaurante"
+    },
+    {
+      "key": "FITNESS_CENTER",
+      "label": "Academia"
+    },
+    {
+      "key": "ROOM_SERVICE",
+      "label": "Serviço de quarto"
+    },
+    {
+      "key": "STEAM_ROOM",
+      "label": "Sauna"
+    },
+    {
+      "key": "PET_FRIENDLY",
+      "label": "Aceita pets"
+    },
+    {
+      "key": "BAR",
+      "label": "Bar"
+    },
+    {
+      "key": "SPA",
+      "label": "Spa"
+    },
+    {
+      "key": "ACCESSIBILITY",
+      "label": "Acessibilidade"
+    }
+  ]
+}

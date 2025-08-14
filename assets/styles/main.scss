@@ -1,0 +1,212 @@
+// Import variables first
+@use './variables' as *;
+
+// Import utilities
+@use './utilities' as *;
+
+// Import component styles
+@use './components' as *;
+
+// Import page styles
+@use './pages' as *;
+
+// Material Icons
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: $font-family;
+  font-size: $font-size-default;
+  line-height: 1.5;
+  color: $info-600;
+  background-color: #f5f5f5;
+  height: 100%;
+}
+
+// Container
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-16;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 0 $spacing-24;
+  }
+}
+
+// Typography
+.title {
+  font-size: $font-size-title;
+  font-weight: 600;
+  color: $info-600;
+  margin-bottom: $spacing-16;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: $info-500;
+  margin-bottom: $spacing-12;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-4 { margin-bottom: $spacing-4; }
+.mb-8 { margin-bottom: $spacing-8; }
+.mb-12 { margin-bottom: $spacing-12; }
+.mb-16 { margin-bottom: $spacing-16; }
+.mb-20 { margin-bottom: $spacing-20; }
+.mb-24 { margin-bottom: $spacing-24; }
+.mb-32 { margin-bottom: $spacing-32; }
+
+.mt-4 { margin-top: $spacing-4; }
+.mt-8 { margin-top: $spacing-8; }
+.mt-12 { margin-top: $spacing-12; }
+.mt-16 { margin-top: $spacing-16; }
+.mt-20 { margin-top: $spacing-20; }
+.mt-24 { margin-top: $spacing-24; }
+.mt-32 { margin-top: $spacing-32; }
+
+.p-4 { padding: $spacing-4; }
+.p-8 { padding: $spacing-8; }
+.p-12 { padding: $spacing-12; }
+.p-16 { padding: $spacing-16; }
+.p-20 { padding: $spacing-20; }
+.p-24 { padding: $spacing-24; }
+.p-32 { padding: $spacing-32; }
+
+
+
+// Card styles
+.card {
+  background-color: white;
+  border-radius: $border-radius-12;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: $spacing-24;
+  margin-bottom: $spacing-24;
+
+  &__header {
+    margin-bottom: $spacing-16;
+  }
+
+  &__title {
+    font-size: $font-size-title;
+    font-weight: 600;
+    color: $info-600;
+    margin-bottom: $spacing-8;
+  }
+
+  &__content {
+    color: $info-500;
+  }
+}
+
+// Form styles
+.form {
+  &__group {
+    margin-bottom: $spacing-16;
+  }
+
+  &__label {
+    display: block;
+    font-size: $font-size-default;
+    font-weight: 500;
+    color: $info-600;
+    margin-bottom: $spacing-4;
+  }
+
+  &__input {
+    width: 100%;
+    padding: $spacing-8 $spacing-12;
+    border: 1px solid $info-100;
+    border-radius: $border-radius-8;
+    font-family: $font-family;
+    font-size: $font-size-default;
+    color: $info-600;
+    background-color: white;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-100;
+    }
+
+    &::placeholder {
+      color: $info-300;
+    }
+  }
+
+  &__textarea {
+    @extend .form__input;
+    resize: vertical;
+    min-height: 80px;
+  }
+}
+
+// Grid system
+.grid {
+  display: grid;
+  gap: $spacing-16;
+
+  &--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Flexbox utilities
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-4 { gap: $spacing-4; }
+.gap-8 { gap: $spacing-8; }
+.gap-12 { gap: $spacing-12; }
+.gap-16 { gap: $spacing-16; }
+.gap-20 { gap: $spacing-20; }
+.gap-24 { gap: $spacing-24; }

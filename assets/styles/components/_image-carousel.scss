@@ -1,0 +1,374 @@
+@use '../variables' as *;
+
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f0f0f0;
+  min-height: 200px;
+
+  &__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: grab;
+    display: block;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &--zoomed {
+      transform: scale(1.5);
+      cursor: zoom-out;
+    }
+  }
+
+  &__loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  &__spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid $info-200;
+    border-top: 3px solid $primary-100;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  &__placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: $info-400;
+    background: $info-50;
+
+    i {
+      font-size: 48px;
+      margin-bottom: $spacing-8;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &__zoom-controls {
+    position: absolute;
+    top: $spacing-12;
+    right: $spacing-12;
+    z-index: 4;
+  }
+
+  &__zoom-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background: white;
+      transform: scale(1.1);
+    }
+
+    i {
+      font-size: 20px;
+      color: $info-600;
+    }
+  }
+
+  &__counter {
+    position: absolute;
+    bottom: $spacing-12;
+    right: $spacing-12;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: $spacing-6 $spacing-10;
+    border-radius: $border-radius-8;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 4;
+    backdrop-filter: blur(10px);
+  }
+
+  &__stars-badge {
+    position: absolute;
+    top: $spacing-16;
+    left: $spacing-16;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: $border-radius-8;
+    padding: $spacing-8 $spacing-12;
+    display: flex;
+    align-items: center;
+    gap: $spacing-2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    z-index: 4;
+  }
+
+  &__star {
+    color: #FFD700;
+    font-size: 16px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $spacing-16;
+    pointer-events: none;
+    z-index: 4;
+  }
+
+  &__nav-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+
+    &:hover:not(:disabled) {
+      background: white;
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    i {
+      font-size: 20px;
+      color: $info-600;
+    }
+  }
+
+  &__indicators {
+    position: absolute;
+    bottom: $spacing-16;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: $spacing-6;
+    z-index: 4;
+  }
+
+  &__indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.8);
+      transform: scale(1.2);
+    }
+
+    &--active {
+      background: white;
+      transform: scale(1.3);
+    }
+  }
+
+  &__thumbnails {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: $spacing-8;
+    z-index: 5;
+    backdrop-filter: blur(10px);
+  }
+
+  &__thumbnail-container {
+    display: flex;
+    gap: $spacing-8;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $info-300 transparent;
+
+    &::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $info-300;
+      border-radius: 2px;
+    }
+  }
+
+  &__thumbnail {
+    width: 60px;
+    height: 40px;
+    border-radius: $border-radius-4;
+    border: 2px solid transparent;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &--active {
+      border-color: $primary-100;
+      transform: scale(1.1);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Responsividade
+@media (max-width: $breakpoint-md) {
+  .image-carousel {
+    &__nav {
+      padding: 0 $spacing-12;
+    }
+
+    &__nav-btn {
+      width: 40px;
+      height: 40px;
+
+      i {
+        font-size: 18px;
+      }
+    }
+
+    &__zoom-controls {
+      top: $spacing-8;
+      right: $spacing-8;
+    }
+
+    &__zoom-btn {
+      width: 36px;
+      height: 36px;
+
+      i {
+        font-size: 18px;
+      }
+    }
+
+    &__counter {
+      bottom: $spacing-8;
+      right: $spacing-8;
+      padding: $spacing-4 $spacing-8;
+      font-size: 11px;
+    }
+
+    &__thumbnails {
+      padding: $spacing-6;
+    }
+
+    &__thumbnail {
+      width: 50px;
+      height: 35px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .image-carousel {
+    &__nav-btn {
+      width: 36px;
+      height: 36px;
+
+      i {
+        font-size: 16px;
+      }
+    }
+
+    &__zoom-btn {
+      width: 32px;
+      height: 32px;
+
+      i {
+        font-size: 16px;
+      }
+    }
+
+    &__thumbnail {
+      width: 45px;
+      height: 30px;
+    }
+
+    &__counter {
+      font-size: 10px;
+      padding: $spacing-3 $spacing-6;
+    }
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

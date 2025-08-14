@@ -1,0 +1,237 @@
+@use '../variables' as *;
+
+.hotels-page {
+  min-height: 100vh;
+  padding: $spacing-32 0;
+  background: linear-gradient(135deg, $primary-100 0%, $primary-200 100%);
+
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-32;
+  }
+}
+
+.hotels-section {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-24;
+}
+
+// Controles de ordenamento entre os componentes
+.sorting-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $spacing-24;
+}
+
+// Card principal que envolve apenas a lista de hotéis
+.hotels-card {
+  background: white;
+  border-radius: $border-radius-20;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: $container-max-width;
+  width: 100%;
+  margin-top: -85px;
+}
+
+// Container para a lista de hotéis
+.hotels-card__content {
+  padding: 62px 32px;
+}
+
+.minimal-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing-16 $spacing-24;
+  background: white;
+  border-radius: $border-radius-12;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f1f5f9;
+  max-width: 320px;
+  width: 100%;
+  z-index: 9;
+  margin-top: 20px;
+}
+
+.controls-group {
+  display: flex;
+  align-items: center;
+  gap: $spacing-16;
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: $spacing-12;
+    align-items: stretch;
+  }
+}
+
+.sort-select {
+  min-width: 140px;
+  padding: $spacing-8 $spacing-12;
+  border: 1px solid #e2e8f0;
+  border-radius: $border-radius-8;
+  background: white;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  padding-right: 32px;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-100;
+    box-shadow: 0 0 0 3px rgba(0, 158, 251, 0.1);
+  }
+
+  &:hover {
+    border-color: #cbd5e1;
+  }
+
+  option {
+    background: white;
+    color: #374151;
+    padding: $spacing-4;
+  }
+}
+
+.view-toggle {
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: $border-radius-8;
+  padding: 3px;
+  gap: 3px;
+
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    color: #64748b;
+    cursor: pointer;
+    border-radius: $border-radius-6;
+    transition: all 0.15s ease;
+
+    &:hover {
+      background: #e2e8f0;
+      color: #475569;
+    }
+
+    &.active {
+      background: white;
+      color: $primary-100;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.hotels-container {
+  &.hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $spacing-24;
+  }
+
+  &.hotels-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-16;
+  }
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-64;
+  color: $info-500;
+  gap: $spacing-16;
+}
+
+// Paginação responsiva
+.pagination-desktop {
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.load-more-mobile {
+  display: none;
+
+  @media (max-width: $breakpoint-md) {
+    display: block;
+  }
+}
+
+// Responsive Design
+@media (max-width: $breakpoint-lg) {
+  .hotels-card {
+    margin-top: -86px;
+  }
+
+  .hotels-container {
+    &.hotels-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .hotels-page {
+    padding: $spacing-16 0;
+  }
+
+  .hotels-card__content {
+    padding: 72px 32px
+  }
+
+  .hotels-container {
+    &.hotels-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $spacing-20;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .hotels-card {
+    margin: -30px 0;
+    border-radius: $border-radius-16;
+  }
+
+  .hotels-card__content {
+    padding: $spacing-20;
+  }
+
+  .hotels-container {
+    &.hotels-grid {
+      grid-template-columns: 1fr;
+      gap: $spacing-20;
+    }
+  }
+}
